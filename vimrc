@@ -5,8 +5,8 @@ autocmd! bufwritepost .vimrc source %
 " Better copy & paste
 " When you want to paste large blocks of code into vim, press F2 before you
 " paste. At the bottom you should see ``-- INSERT (paste) --``.
-set pastetoggle=<F2>
-set clipboard=unnamed
+" set pastetoggle=<F2>
+" set clipboard=unnamed
 
 
 " Mouse and backspace
@@ -17,26 +17,15 @@ set clipboard=unnamed
 " Rebind <Leader> key
 " I like to have it here becuase it is easier to reach than the default and
 " it is next to ``m`` and ``n`` which I use for navigating between tabs.
-let mapleader = ","
+" let mapleader = ","
 
 
 " Bind nohl
 " Removes highlight of your last search
 " ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
-
-
-" Quicksave command
-noremap <C-Z> :update<CR>
-vnoremap <C-Z> <C-C>:update<CR>
-inoremap <C-Z> <C-O>:update<CR>
-
-
-" Quick quit command
-noremap <Leader>e :quit<CR>  " Quit current window
-noremap <Leader>E :qa!<CR>   " Quit all windows
+" noremap <C-n> :nohl<CR>
+" vnoremap <C-n> :nohl<CR>
+" inoremap <C-n> :nohl<CR>
 
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
@@ -50,10 +39,6 @@ map <c-h> <c-w>h
 " easier moving between tabs
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
-
-
-" map sort function to a key
-vnoremap <Leader>s :sort<CR>
 
 
 " easier moving of code blocks
